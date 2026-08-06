@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --fundo-principal: #f5f5f5;
+    --texto: #222222;
+    --texto-inverso: #ffffff;
+    --destaque: #085355;
+    --destaque-inverso: #14EFF5;
+    --fundo-card: #ffffff;
+    --fundo-claro: #1BD0D6;
+}
+
+body {
+    background-color: var(--fundo-principal);
+}
+
+header {
+    background-color: var(--destaque);
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    position: sticky;/*fixando menu durante a rolagem*/
+    top: 0;                /*<-*/
+    z-index: 1; /*"ajeitando camadas" valor padrão 0*/
+}
+
+
+
+nav#menu ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    list-style: none;
+}
+
+nav#menu a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
