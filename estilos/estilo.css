@@ -89,11 +89,15 @@ a#botao-tema:hover {
 
 main {
     display: grid;
-    grid-template-columns: 1fr 90vw 1fr;
+    grid-template-columns: auto 90vw auto;
     gap: 20px;
     margin-top: 20px;
     
     padding: 10px;
+}
+
+section {
+    grid-column: 2;
 }
 
 section#ficha {
