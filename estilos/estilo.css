@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 }
 
 :root {
@@ -14,6 +15,15 @@
     --destaque-inverso: #14EFF5;
     --fundo-card: #ffffff;
     --fundo-claro: #1BD0D6;
+}
+
+body.escuro {
+    --fundo-principal:#222222;
+    --texto:#e0e0e0;
+    --texto-inverso:#333333;
+    --destaque:#13ced4;
+    --destaque-inverso:#085355;
+    --fundo-card:#444444;
 }
 
 body {
@@ -27,11 +37,19 @@ header {
     padding: 10px;
     display: flex;
     justify-content: flex-end;
-    align-content: center;
+    align-items: center;
     position: sticky;/*fixando menu durante a rolagem*/
     top: 0;                /*<-*/
     z-index: 1; /*"ajeitando camadas" valor padrão 0*/
 }
+
+.menu-hamburguer { 
+    display: none; 
+    background: none; 
+    border: none; 
+    color: white; 
+    font-size: 30px; 
+    cursor: pointer; }
 
 nav#menu ul {
     display: flex;
@@ -48,6 +66,22 @@ nav#menu a {
 }
 
 nav#menu a:hover {
+    transition: 0.5s;
+    background-color: var(--fundo-principal);
+    color: var(--destaque);
+}
+
+a#botao-tema {
+    
+
+    text-decoration: none;
+    color: white;
+    padding: 8px ;
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+a#botao-tema:hover {
     transition: 0.5s;
     background-color: var(--fundo-principal);
     color: var(--destaque);
@@ -99,6 +133,7 @@ div#social {
     font-size: 1.5em;
     gap:1em;
     
+    
 }
 
 div#social a {
@@ -107,8 +142,9 @@ div#social a {
 }
 
 div#social a:hover {
-    
+    transform: scale(1.25);
     color: var(--destaque-inverso);
+    
 }
 
 div#contato {
@@ -144,6 +180,7 @@ section#sobre p {
 section#sobre strong{
     color: var(--destaque);
     font-size: 1em;
+    text-shadow: 1px 0px 0px var(--destaque-inverso);
 }
 
 section#habilidades{
@@ -203,7 +240,38 @@ div.skill p {
     text-align: center;
 }
 
+div.skill#estd p {
+    padding-top: 0px;
+    font-size: 45px;
+}
 
+@media (max-width: 768px) {
+
+    header {
+        justify-content: space-between;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .menu-hamburguer {
+        display: block;
+    }
+
+    nav#menu {
+        display: none;
+        
+    }
+
+    nav#menu.ativo {
+        display: block;
+    }
+
+    nav#menu ul {
+        display: flex;
+        gap: 15px;
+        list-style: none;
+    }
+}
 
 
 

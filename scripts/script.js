@@ -38,3 +38,20 @@ navLinks.forEach(link => {
     }
   });
 });
+
+// Menu hambúrguer
+
+const menuBtn = document.querySelector("#menuBtn");
+const menu = document.querySelector("#menu");
+
+menuBtn.addEventListener("click", () => {
+
+    menu.classList.toggle("ativo");
+
+    if (menu.classList.contains("ativo")) {
+        menuBtn.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+    } else {
+        menuBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
+    }
+
+});
