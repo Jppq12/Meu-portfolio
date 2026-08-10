@@ -413,7 +413,8 @@ div.skill#estd p {
     ========================= */
 
     header {
-        justify-content: flex-end;
+        justify-content: flex-start;
+        align-items: center;
     }
 
     .menu-hamburguer {
@@ -423,7 +424,7 @@ div.skill#estd p {
     nav#menu {
         display: block;
         position: static;
-
+        transform: none;
         padding: 0;
 
         background-color: transparent;
@@ -445,6 +446,7 @@ div.skill#estd p {
         color: var(--destaque);
     }
 
+    
 
     /* =========================
        MAIN
