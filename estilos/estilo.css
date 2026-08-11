@@ -423,6 +423,49 @@ div.skill#estd p {
     font-size: 45px;
 }
 
+section#formacao {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: center;
+}
+
+section#formacao h1 {
+    text-align: center;
+    color: var(--destaque);
+    margin-bottom: 20px;
+}
+
+div.formacao {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--destaque);
+    color: white;
+    border-radius: 12px 0px 0px 0px;
+    margin-left: 10px;
+    padding: 10px;
+    width: 320px;
+    box-shadow:5px 0px 0 var(--destaque-inverso) ;
+}
+
+div.formacao:hover {
+    transition: 0.3s;
+    transform: scale(1.05);
+    
+}
+
+div#container-cc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+div.formacao#cev {
+    width: 200px;
+}
 
 /* ==================================================
    TABLET / DESKTOP
