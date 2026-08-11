@@ -267,18 +267,38 @@ div#social a:hover {
 ========================= */
 
 div#contato {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;  
+}
+
+div#contato h2{
     color: var(--destaque);
 
     padding-top: 10px;
 
     text-align: center;
 
-    font-size: 1em;
+    font-size: 1.3em;
 }
 
-div#contato p {
-    padding-top: 5px;
+div#wppem {
+    text-align: center;
 }
+
+div#wppem a{
+    display: inline-block;
+    font-size: 1.5em;
+    padding: 5px;
+    color: var(--destaque);
+    transition: transform 0.5s, color 0.5s;
+}
+
+div#wppem a:hover {
+    color: var(--destaque-inverso);
+    transform: scale(1.25);
+}
+
 
 /* =========================
    Box dos conteudos
