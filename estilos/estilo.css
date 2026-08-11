@@ -457,7 +457,7 @@ div.formacao:hover {
 div#container-cc {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 10px;
     flex-wrap: wrap;
     gap: 10px;
@@ -465,6 +465,11 @@ div#container-cc {
 
 div.formacao#cev {
     width: 200px;
+    text-align: center;
+}
+
+div.formacao#cev p{
+    padding-top: 5px;
 }
 
 /* ==================================================
