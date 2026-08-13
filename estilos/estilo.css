@@ -48,7 +48,10 @@ body {
     background-color: var(--fundo-principal);
     color: var(--texto);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
 }
+
+
 
 
 /* =========================
@@ -493,7 +496,7 @@ div.formacao#cev p{
         display: block;
         position: static;
         transform: none;
-        padding: 0;
+        padding: 2px;
 
         background-color: transparent;
         border-radius: 0;
