@@ -260,10 +260,24 @@ div#social a {
 
 div#social a:hover {
     transform: scale(1.25);
-
-    color: var(--destaque-inverso);
 }
 
+div#social a#linkedin:hover {
+    color: #0A66c2;
+}
+
+div#social a#github:hover {
+    color: #181717;
+}
+
+div#social a#insta:hover {
+    
+    border-radius: 50% ;
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    color: white;
+}
 
 /* =========================
    CONTATO
@@ -287,19 +301,34 @@ div#contato h2{
 
 div#wppem {
     text-align: center;
+    
 }
 
 div#wppem a{
     display: inline-block;
     font-size: 1.5em;
-    padding: 5px;
+    padding: 7px;
     color: var(--destaque);
     transition: transform 0.5s, color 0.5s;
 }
 
 div#wppem a:hover {
-    color: var(--destaque-inverso);
     transform: scale(1.25);
+}
+
+div#wppem a#email:hover {
+    background-color:#0078D4 ;
+    color: white;
+    border-radius: 50% ;
+    padding: 4px;
+}
+
+div#wppem a#wpp:hover {
+    border-radius: 50% ;
+    margin: 0;
+    padding: 1px;
+    background-color: #25D366;
+    color: white;
 }
 
 
