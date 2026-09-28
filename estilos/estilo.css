@@ -129,7 +129,7 @@ nav#menu a {
     display: block;
 
     text-decoration: none;
-    color: var(--texto-inverso);
+    color: white;
 
     padding: 3px;
 
@@ -139,7 +139,7 @@ nav#menu a {
 }
 
 nav#menu a:hover {
-    background-color: var(--texto-inverso);
+    background-color: white;
     color: var(--destaque);
 }
 
@@ -161,6 +161,8 @@ a#botao-tema {
     border-radius: 50px;
 
     font-weight: 600;
+
+    margin-left: auto;/*Alinhar na direita da pagina*/
 }
 
 a#botao-tema:hover {
@@ -204,6 +206,8 @@ section#ficha {
     padding: 20px;
 
     border-radius: 8px;
+
+    
 }
 
 section#ficha img.foto {
@@ -455,36 +459,6 @@ div.skill#estd p {
     font-size: 45px;
 }
 
-section#formacao {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    justify-content: center;
-}
-
-section#formacao h1 {
-    text-align: center;
-    color: var(--destaque);
-    margin-bottom: 20px;
-}
-
-div.formacao {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--destaque);
-    color: white;
-    border-radius: 12px 0px 0px 0px;
-    margin-left: 10px;
-    padding: 10px;
-    width: 320px;
-    box-shadow:5px 0px 0 var(--destaque-inverso) ;
-}
-
-div.formacao:hover {
-    transition: 0.3s;
-    transform: scale(1.05);
-    
-}
 
 div#container-cc {
     display: flex;
@@ -495,14 +469,77 @@ div#container-cc {
     gap: 10px;
 }
 
-div.formacao#cev {
-    width: 200px;
+section#formacao {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: center;
+
+}
+
+section#formacao h1 {
+    text-align: center;
+    color: var(--destaque);
+    margin-bottom: 20px;
+}
+
+div.formacao-academica {
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--destaque);
+    color: white;
+
+    border-radius: 12px 0px 0px 0px;
+    margin-left: 10px;
+    padding: 10px;
+    box-shadow:5px 0px 0 var(--destaque-inverso) ;
+    width: 80%;
+
     text-align: center;
 }
 
-div.formacao#cev p{
+div.formacao-academica:hover {
+    transition: 0.3s;
+    transform: scale(1.05);
+}
+
+div.cursos {
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--destaque);
+    color: white;
+
+    border-radius: 12px 0px 0px 0px;
+    margin-left: 10px;
+    padding: 10px;
+    box-shadow:5px 0px 0 var(--destaque-inverso) ;
+    width: 200px;
+
+    text-align: center;
+}
+
+div.cursos p {
     padding-top: 5px;
 }
+
+div.cursos:hover {
+    transition: 0.3s;
+    transform: scale(1.05);
+}
+
+div.cursos .info {
+    display: none;
+}
+
+div.cursos.mostrar .info{
+    display: block;
+}
+
+
+
+
 
 /* ==================================================
    TABLET / DESKTOP
@@ -576,6 +613,7 @@ div.formacao#cev p{
 
         height: fit-content;
 
+        
         position: sticky;
         top: 65px;
     }
