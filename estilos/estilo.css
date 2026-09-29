@@ -459,11 +459,16 @@ div.skill#estd p {
     font-size: 45px;
 }
 
+div.skill#mysql img{
+    height: 100%;
+    width: 100%;
+}
+
 
 div#container-cc {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     padding: 10px;
     flex-wrap: wrap;
     gap: 10px;
@@ -474,6 +479,7 @@ section#formacao {
     flex-direction: column;
     padding: 10px;
     justify-content: center;
+    background-color: var(--fundo-card);
 
 }
 
