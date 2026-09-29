@@ -241,6 +241,7 @@ section#ficha h1 {
 }
 
 
+
 /* =========================
    REDES SOCIAIS
 ========================= */
@@ -275,7 +276,6 @@ div#social a#github:hover {
 }
 
 div#social a#insta:hover {
-    
     border-radius: 50% ;
     margin: 0;
     padding: 0;
