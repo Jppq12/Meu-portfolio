@@ -459,9 +459,10 @@ div.skill#estd p {
     font-size: 45px;
 }
 
-div.skill#mysql img{
-    height: 100%;
-    width: 100%;
+
+p#golfinho {
+    font-size: 50px;
+    filter: brightness(0) invert(1);
 }
 
 
